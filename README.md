@@ -2,7 +2,11 @@
 
 This project is create by django web framework
 
-1 - just install django, pyttsx3
+1 - just install django, pyttsx3, celery
+2 - download th redis and run on your system
+3 - go to your project root and run this command --> celery -A text_to_audio worker --pool=solo -l info
+4 - go to your project root and run this command --> python manage.py runserver
+5 - Done!
 
 This is the preview of my project
 
