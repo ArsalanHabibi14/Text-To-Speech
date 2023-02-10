@@ -1,0 +1,43 @@
+/*
+    body background color: #20123A
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color:#17112F;
+}
+
+.form{
+    height: 100%;
+}
+
+.text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:#20123A;
+    border:none;
+    border-radius: 5px;
+    width: 15%;
+    height: 50px;
+    transition: 1s;
+    background-image: url("search.svg");
+    background-position: 10px 10px;
+    background-repeat:no-repeat;
+    padding-left:50px;
+    color:#fff;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text:focus{
+    width: 60%;
+}

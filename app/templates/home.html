@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1>This the text to Speech</h1>
-    <form method="get">
-        <input type="text" name="text" value="{{ request.GET.text }}">
-        <button>Submit</button>
+    <form method="get" class="form">
+        <input type="text" name="text" placeholder="Write a text to read that" value="{{ request.GET.text }}" class="text">
     </form>
 </body>
 </html>
